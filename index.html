@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Mix Restuarant</h1>
+        <div class="card">
+            <div class="card-img">
+                <img class="img" width="150px" height="150px" src="./image/download.jpg" alt="">
+            </div>
+        </div>
+        <div class="card-title">
+            <h3>Chicken burger</h3>
+            <h3>Size:6'</h3>
+            <h3 class="price">Price:$ <span id="price">100</span></h3>
+
+            <i class="fa fa-plus" onclick="increament('count','price','item')"></i>
+            <input class="inputText" type="button" id="count"  value="0">
+            <i class="fa fa-minus" onclick="decriment('count','price','item')"></i>
+            <span>Your Items $ <span id="item">00</span></span>
+        </div>
+
+
+        <div class="clear">
+            <hr class="hr-Style">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img" width="150px" height="150px" src="./image/saturatefat-foods-ss-no-exp-620x400.png " alt="">
+                </div>
+            </div>
+            <div class="card-title">
+                <h3>Chicken Piza</h3>
+                <h3>Size:10'</h3>
+                <h3 class="price">Price:$ <span id="price1">600</span></h3>
+    
+                <i class="fa fa-plus" onclick="increament('count1','price1','item1')"></i>
+                <input id="count1" class="inputText" type="button" value="0">
+                <i class="fa fa-minus" onclick="decriment('count1','price1','item1')"></i>
+                <span>Your Items $ <span id="item1">00</span></span>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="fixt">
+        <h1 class="total">The Total Amount Of</h1>
+        <h2>Product Amount:$ <span id="pr-amount">00</span></h2>
+        <h2>Delivary charge:$ <span id="charge">20</span></h2>
+        -----------------------------------------------------------------
+        <h2>Total Product amount:$ <span id="total-amount">00</span></h2>
+    <hr><br><br><br>
+        <div class="kupon-mainDiv">
+            <h4 class="kupon">kupon code with $50 less</h4><br>
+            <h4 class="kuponcode">Your Code Is:402046</h4>
+            <input class="kuponInput" id="KuponInput"  type="text" placeholder="Your kupon code...">
+            <button class="apply" id="ApplyBtn">Apply</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
